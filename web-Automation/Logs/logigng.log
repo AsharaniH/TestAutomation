@@ -1,0 +1,25 @@
+2021-10-31 18:40:10 INFO  .:8 - The For Loop Output Starts here...
+2021-10-31 18:40:10 INFO  .:13 - Even Number :20
+2021-10-31 18:40:10 INFO  .:13 - Even Number :22
+2021-10-31 18:40:10 INFO  .:13 - Even Number :24
+2021-10-31 18:40:10 INFO  .:13 - Even Number :26
+2021-10-31 18:40:10 INFO  .:13 - Even Number :28
+2021-10-31 18:40:10 INFO  .:13 - Even Number :30
+2021-10-31 18:40:10 INFO  .:13 - Even Number :32
+2021-10-31 18:40:10 INFO  .:13 - Even Number :34
+2021-10-31 18:40:10 INFO  .:13 - Even Number :36
+2021-10-31 18:40:10 INFO  .:13 - Even Number :38
+2021-10-31 18:40:10 INFO  .:13 - Even Number :40
+2021-10-31 18:40:10 INFO  .:16 - The For Loop Output Ends here...
+2021-11-03 23:35:06 WARN  HashedWheelTimer:672 - An exception was thrown by TimerTask.
+java.lang.IllegalStateException: cannot be started once stopped
+	at io.netty.util.HashedWheelTimer.start(HashedWheelTimer.java:338)
+	at io.netty.util.HashedWheelTimer.newTimeout(HashedWheelTimer.java:413)
+	at org.asynchttpclient.netty.channel.DefaultChannelPool.scheduleNewIdleChannelDetector(DefaultChannelPool.java:95)
+	at org.asynchttpclient.netty.channel.DefaultChannelPool.access$900(DefaultChannelPool.java:43)
+	at org.asynchttpclient.netty.channel.DefaultChannelPool$IdleChannelDetector.run(DefaultChannelPool.java:378)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:669)
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:744)
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:469)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:831)
